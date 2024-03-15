@@ -456,25 +456,27 @@ hr {
 	}
 
 	.cuadroBotonera {
-
 		float: none;
 		width: 100%;
 		right: auto;
 		padding-bottom: 10px;
 		padding-top: 10px;
 		text-align: right;
+		white-space: nowrap; /* Evitar que los elementos se envuelvan a la siguiente línea */
+		
 	}
 	
-	.cuadroBotonera p {
-        white-space: nowrap;
-		font-size: 6px;  /* Evita que el texto se envuelva */
-    }
+	.cuadroBotonera a {
+		display: inline-block;
+		margin-left: 2px;
+		margin-right: 2px;
+	}
 
 	A.btTop {
-		font-size: 14px;
+		font-size: 8px;
 		line-height: 20px;
-		margin-left: 5px;
-		margin-right: 5px;
+		margin-left: 2px;
+		margin-right: 2px;
 	}
 
 	.cuadroTop {
@@ -537,14 +539,18 @@ hr {
 	}
 
 	/*         IMAGENES EMPRESA     */
-
+	.w3-third h2 {
+		font-size: 26px;
+	  }
 
 	.imagen-container {
 		width: 60%;
 		/* Establece el ancho del contenedor de la imagen al 60% del contenedor de descripción */
 	}
 	
-	
+	.contenidoDescripcion h2 {
+		font-size: 20px
+	}
 	
 	.contenidoDescripcion {
 		width: 40%;
@@ -574,8 +580,9 @@ hr {
 	
 	
 	.imagen {
-        width: 55%;
-	    max-width: 70%;
+        width: 50%; /* Establece el ancho de la imagen al 50% del contenedor en dispositivos móviles */
+        height: 24vh; /* Establece la altura de la imagen al 90% del viewport height */
+        object-fit: cover; /* Mantiene la proporción de la imagen y la ajusta para llenar el contenedor */
     }
 	
 	.contenidoDescripcion {
