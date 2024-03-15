@@ -463,9 +463,23 @@ hr {
 		padding-top: 10px;
 		text-align: right;
 		white-space: nowrap; /* Evitar que los elementos se envuelvan a la siguiente línea */
-		
+		overflow-x: auto; /* Habilita el desplazamiento horizontal */
+    overflow-y: hidden; /* Oculta la barra de desplazamiento vertical */
+    white-space: nowrap; /* Evita el ajuste de línea de los elementos */
+    -webkit-overflow-scrolling: touch; /* Mejora el desplazamiento en dispositivos iOS */
 	}
+	.cuadroBotonera {
+        overflow-x: auto; /* Habilita el desplazamiento horizontal */
+        overflow-y: hidden; /* Oculta la barra de desplazamiento vertical */
+    }
 	
+	.btTop {
+		display: inline-block; /* Permite que los elementos se muestren en línea */
+		margin-right: 10px; /* Espacio entre los elementos */
+		padding: 10px; /* Espacio interno de los elementos */
+		/* Agrega otros estilos según sea necesario */
+	}
+
 	.cuadroBotonera a {
 		display: inline-block;
 		margin-left: 2px;
