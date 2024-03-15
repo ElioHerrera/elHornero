@@ -1,0 +1,639 @@
+body {
+	margin: 0px;
+	font-size: 20px;
+	line-height: 30px;
+	font-family: 'Pathway Extreme', sans-serif;
+	background-color: #454546;
+}
+
+
+.cuadroBotonera {
+
+	/*position: fixed;*/
+	top: 0;
+	/* Fijar en la parte superior */
+	left: 0;
+	/* Alinear a la izquierda */
+	width: 100%;
+	/* Ancho completo */
+	z-index: 9999;
+
+
+
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 20px;
+	background: linear-gradient(to right, #ffff00, #666666 50%);
+	align-items: center;
+	/* Centrar verticalmente */
+	text-align: right;
+}
+
+
+
+.cuadroLogo_Contacto {
+
+
+
+	padding-top: 60px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.Logo {
+	float: center;
+	height: 0%;
+
+
+}
+
+.cuadroWhatsApp {
+	font-family: 'Pathway Extreme', sans-serif;
+	font-size: 30px;
+	line-height: 46px;
+	color: #093;
+	font-weight: 700;
+	float: right;
+
+}
+
+.fondoimg1 {
+	background-color: #4f4f4f;
+
+}
+
+.fondoimg2 {
+	background-color: #8d8d8d;
+
+}
+
+.fondoimg3 {
+	background-color: #000000;
+
+}
+
+.cuadroSlider {
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.w3-content {
+	padding-left: 0px;
+	padding-right: 0px;
+
+}
+	A.btTop {
+		text-decoration: none;
+		font-family: 'Pathway Extreme', sans-serif;
+		font-size: 14px;
+		line-height: 18px;
+	}
+
+	A.btTop:Hover {
+		color: #8d1010;
+		text-decoration: none;
+	}
+
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+/*
+.fototop {
+	background-color: #fff;
+	background-image: url(images/fondo_top.jpg);
+	background-position:bottom center;
+	background-size:cover;
+	height:202px;
+}
+
+.cuadroTop {
+	margin-top:200px;
+	padding:40px;
+	background-color: rgba(242, 242, 242, 0.7)!important;
+}
+
+*/
+
+/* Estilos para la primera sección */
+.fondoimg1 .contenidoDescripcion h3 {
+    color: red; /* Cambia el color del título de la primera sección a rojo */
+}
+
+.fondoimg1 .contenidoDescripcion p {
+    color: white; /* Cambia el color del párrafo de la primera sección a azul */
+}
+
+/* Estilos para la segunda sección */
+.fondoimg2 .contenidoDescripcion h3 {
+    color: red; /* Cambia el color del título de la segunda sección a verde */
+}
+
+.fondoimg2 .contenidoDescripcion p {
+    color: white; /* Cambia el color del párrafo de la segunda sección a naranja */
+}
+
+/* Estilos para la tercera sección */
+.fondoimg3 .contenidoDescripcion h3 {
+    color: purple; /* Cambia el color del título de la tercera sección a morado */
+}
+
+.fondoimg3 .contenidoDescripcion p {
+    color: brown; /* Cambia el color del párrafo de la tercera sección a marrón */
+}
+
+
+.bordeForm {
+	border: 1px solid #1820ff;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.green {
+	background: linear-gradient(to right, #666666, #8c8c8c 100%);
+	padding: 16px;
+
+}
+
+.imgEmpresa {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    align-items: center;
+}
+
+.contenedorDescripcion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.imagen-container {
+    width: 60%;
+    /* Establece el ancho del contenedor de la imagen al 60% del contenedor de descripción */
+}
+
+.imagen {
+    width: 70%;
+    max-width: 70%;
+    /* Establece el ancho de la imagen al 100% del contenedor de imagen */
+}
+
+.contenidoDescripcion {
+    width: 40%;
+    /* Establece el ancho del texto al 40% del contenedor de descripción */
+    text-align: center;
+}
+
+.contenedorDescripcion:nth-child(2) .contenidoDescripcion {
+    order: 1;
+}
+
+.contenedorDescripcion:nth-child(2) .imagen-container {
+    order: 2;
+}
+
+.contenedorDescripcion:nth-child(3) .contenidoDescripcion {
+    order: 1;
+}
+
+.contenedorDescripcion:nth-child(3) .imagen-container {
+    order: 2;
+}
+
+/*
+.greenContacto {
+	background: linear-gradient(to right,#006FBA ,#00548C 100%);
+	padding: 16px;
+	width:30%;
+}
+*/
+.cuadroServicio {
+	float: left;
+	width: 24%;
+	padding-bottom: 20px;
+	text-align: center;
+	height: 220px;
+}
+
+.cuadroServicio img {
+	max-width: 160px;
+	text-align: center;
+}
+
+.logo {
+	max-width: auto;
+	max-height: 150px;
+}
+
+.cuadroRedes {
+	float: left;
+	width: 33%;
+	padding: 30px;
+	text-align: center;
+	margin-bottom: 0px;
+	margin-top: 50px;
+}
+
+.cuadroRedes img {
+
+	max-width: 80px;
+	max-height: auto;
+}
+
+.break {
+	float: none;
+	clear: both;
+}
+
+form {
+	margin: 0px;
+}
+
+p {
+	font-family: 'Pathway Extreme', sans-serif;
+	font-size: 16px;
+	line-height: 26px;
+	color: #b5aeae;
+	margin-top: 4px;
+	margin-right: 2px;
+	margin-bottom: 4px;
+	margin-left: 2px;
+}
+
+/*
+.botonform {
+	font-family: 'Pathway Extreme', sans-serif;!important
+	font-size: 18px;!important
+	line-height: 22px;!important
+	color: #FFF;!important
+	background-color: #FF1821;!important
+	height: 50px;!important
+	border: 1px solid #FF1821;!important
+	font-weight: bold;!important
+}
+.botonform:hover {
+	color: #000;!important
+	background-color: #333;!important
+	border: 1px solid #61AD2A;!important
+}
+*/
+.cajaForm {
+	font-family: 'Pathway Extreme', sans-serif;
+	font-size: 18px;
+	line-height: 22px;
+	color: #333;
+	padding-top: 4px;
+	padding-right: 8px;
+	padding-bottom: 4px;
+	padding-left: 8px;
+	border: 1px solid #666;
+}
+
+h1 {
+	color: #ffffff;
+	font-family: 'Pathway Extreme', sans-serif;
+	font-size: 28px;
+	line-height: 28px;
+	font-weight: bold;
+}
+
+.titulo {
+	color: #179246;
+	font-family: 'Pathway Extreme', sans-serif;
+	font-size: 56px;
+	line-height: 66px;
+	font-weight: bold;
+}
+
+.tituloSeccion {
+	color: #ffff00;
+	font-family: 'Pathway Extreme', sans-serif;
+	font-size: 46px;
+	line-height: 38px;
+	font-weight: 400;
+	font-style: oblique;
+}
+
+h2 {
+	font-family: 'Pathway Extreme', sans-serif;
+	font-size: 28px;
+	line-height: 38px;
+	color: #ffae18;
+	/*           TITULOS        */
+	border: none;
+	font-weight: 300;
+	margin: 0px;
+}
+
+A.btTop {
+	text-decoration: none;
+	font-family: 'Pathway Extreme', sans-serif;
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: 700;
+	color: #fff;
+	margin-left: 30px;
+}
+
+/*
+A.btTop:Hover {
+	color: #2217b7;
+	text-decoration: none;
+}
+
+
+.botonform {
+	color: #FFFFFF;
+	height: 40px;
+	border: 1px solid #FFFFFF;
+	font-family: 'Pathway Extreme', sans-serif;
+	font-size: 18px;
+	line-height: 20px;
+	background-color: #FF1821;
+	font-weight: normal;
+}
+.botonform:hover {
+	color: #FF1821;
+	background-color: #cccccc;
+	border: 1px solid #FF1821;
+}
+*/
+hr {
+	border-top: 1px solid #F6F6F6;
+}
+
+
+.mapa {
+    width: 100%;
+    height: 50vh;
+	
+}
+
+
+
+
+
+/*VERSION MOVIL*/
+@media screen and (max-width: 1100px) {
+
+	body {
+        font-size: 16px;
+        line-height: 24px;
+		padding-left: 4px;
+		padding-right: 4px;
+    }
+
+	p {
+		font-size: 12px;
+		line-height: 20px;
+		color: #ffffff;
+		/*           TEXTO        */
+		margin-top: 4px;
+		margin-right: 0px;
+		margin-bottom: 4px;
+		margin-left: 0px;
+	}
+
+	.cuadroLogo {
+		width: 49%;
+		padding-bottom: 6px;
+		padding-top: 16px;
+	}
+	.cuadroLogo_Contacto {
+
+
+
+		padding-top: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 20px;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+
+	.cuadroWhatsApp {
+		float: left;
+		width: 60%;
+		padding-top: 6px;
+		text-align: right;
+		font-family: 'Pathway Extreme', sans-serif;
+		font-size: 20px;
+		line-height: 30px;
+		color: #093;
+		font-weight: 700;
+	}
+
+	.logo {
+		padding-top: 15px;
+		max-width: auto;
+		max-height: 60px;
+	}
+
+	.cuadroSlider {
+		width: 100%;
+		margin-left: 0px;
+		margin-right: opx;
+	}
+
+	.cuadroBotonera {
+
+		float: none;
+		width: 100%;
+		right: auto;
+		padding-bottom: 10px;
+		padding-top: 10px;
+		text-align: right;
+	}
+	
+	.cuadroBotonera p {
+        white-space: nowrap;
+		font-size: 6px;  /* Evita que el texto se envuelva */
+    }
+
+	A.btTop {
+		font-size: 14px;
+		line-height: 20px;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+
+	.cuadroTop {
+		margin-top: 50px;
+		padding: 30px;
+	}
+
+	.greenContacto {
+		width: 80%;
+	}
+
+	.cuadroServicio {
+		float: none;
+		width: 99%;
+		padding-bottom: 20px;
+		padding-right: 0px;
+	}
+
+	h1 {
+		color: #fff;
+		font-family: 'Pathway Extreme', sans-serif;
+		font-size: 28px;
+		line-height: 20px;
+		font-weight: bold;
+	}
+
+	.titulo {
+		color: #179246;
+		font-family: 'Pathway Extreme', sans-serif;
+		font-size: 34px;
+		line-height: 34px;
+		font-weight: bold;
+	}
+
+	.tituloSeccion {
+		color: #fff;
+		font-family: 'Pathway Extreme', sans-serif;
+		font-size: 26px;
+		line-height: 26px;
+		font-weight: bold;
+	}
+
+	h2 {
+		font-family: 'Pathway Extreme', sans-serif;
+		font-size: 20px;
+		line-height: 26px;
+		border: none;
+		font-weight: 300;
+		margin: 0px;
+
+
+	}
+
+	h3 {
+		font-family: 'Pathway Extreme', sans-serif;
+		font-size: 28px;
+		line-height: 38px;
+		
+		
+	}
+
+	/*         IMAGENES EMPRESA     */
+
+
+	.imagen-container {
+		width: 60%;
+		/* Establece el ancho del contenedor de la imagen al 60% del contenedor de descripción */
+	}
+	
+	
+	
+	.contenidoDescripcion {
+		width: 40%;
+		/* Establece el ancho del texto al 40% del contenedor de descripción */
+		text-align: center;
+	}
+	
+
+
+	.w3-third img {
+        width: 100%; /* Establece el ancho de la imagen al 100% del contenedor */
+        max-width: 120px; /* Establece el ancho máximo de la imagen en dispositivos móviles */
+        display: block;
+        margin: 0 auto;
+    }
+
+
+	.contenedorDescripcion {
+		display: flex;
+		align-items: center;
+		/* Centrar verticalmente los elementos */
+		margin-bottom: 20px;
+		/* Espacio entre los bloques */
+		
+	}
+
+	
+	
+	.imagen {
+        width: 55%;
+	    max-width: 70%;
+    }
+	
+	.contenidoDescripcion {
+		width: 65%;
+		/* Establece el ancho del texto al 40% del contenedor de descripción */
+		text-align: center;
+	}
+
+
+
+	/* -------------------------------------*/
+
+	A.btTop {
+		text-decoration: none;
+		font-family: 'Pathway Extreme', sans-serif;
+		font-size: 14px;
+		line-height: 18px;
+	}
+
+	A.btTop:Hover {
+		color: #8d1010;
+		text-decoration: none;
+	}
+
+	.bordeForm {
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.cajaForm {
+		width: 90%;
+	}
+
+	.cuadroRedes {
+		float: none;
+		width: 99%;
+		padding: 30px;
+		text-align: center;
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+
+	.sinPadding {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.fondoservicios {
+		margin-top: 50px; /* Ajusta el valor según sea necesario */
+	  }
+	  .fondopag{
+		padding: 30px;
+	  }
+		
+	  
+}

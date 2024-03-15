@@ -3359,17 +3359,31 @@
 }
 .whatsapp-float {
   position: fixed;
-  bottom: 20px; /* Distancia desde abajo */
-  right: 20px; /* Distancia desde la derecha */
-  z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
 }
 
-.whatsapp-float img {
-  width: 60px; /* Tamaño del icono */
-  height: auto;
-  border-radius: 50%; /* Darle forma de círculo al icono */
+.whatsapp-bubble {
+  background-color: #25d366;
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
 }
-/* Aplicar animaciones a los elementos */
+
+.whatsapp-text {
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.whatsapp-icon {
+  width: 40px;
+  height: 40px;
+}
+
+
 /* Aplicar animaciones a los elementos */
 .fondoimg1 .imagen {
   animation: slideInRight 1s forwards; /* Animación de derecha a izquierda para la sección 1 */

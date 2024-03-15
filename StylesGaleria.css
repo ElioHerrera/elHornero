@@ -1,0 +1,115 @@
+/* Estilos generales */
+.cuadroLogo_Galeria {
+  padding: 10px 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.gallery-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.gallery {
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.thumbnail {
+  width: calc(25% - 10px); /* Ajusta el ancho de las imágenes y el margen entre ellas */
+  margin-bottom: 20px;
+  border-radius: 10px; /* Redondea las esquinas de las imágenes */
+}
+
+/* Define el ancho de las imágenes en cada fila */
+.row-3 .thumbnail {
+  width: calc(33.33% - 10px);
+}
+
+.row-4 .thumbnail {
+  width: calc(25% - 10px);
+}
+
+
+/* Ajuste para que las imágenes ocupen el 100% del ancho en una sola fila */
+@media (min-width: 768px) {
+  .thumbnail {
+    width: calc(25% - 10px);
+  }
+}
+
+@media (min-width: 992px) {
+  .thumbnail {
+    width: calc(20% - 10px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .thumbnail {
+    width: calc(16.666% - 10px);
+  }
+}
+
+
+
+/* Estilos para el modal */
+.modal-container {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+}
+
+.modal-content {
+  position: relative;
+  margin: auto;
+  width: 80%;
+  max-width: 800px;
+}
+
+.modal-image {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  max-height: 80%;
+  border-radius: 10px; /* Redondea las esquinas de la imagen modal */
+}
+
+.close-modal {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Estilos para el botón de cerrar */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  z-index: 9999; /* Asegura que el botón de cierre esté por encima de todo */
+  border: none;
+  background: transparent;
+}

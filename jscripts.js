@@ -80,19 +80,34 @@ document.onmousedown=dragscontentmain
 document.onmouseup=new Function("dragapproved=false")
 
 
+// Función para manejar la intersección de las secciones
 function handleIntersection(entries, observer) {
    entries.forEach(entry => {
        if (entry.isIntersecting) {
            // Si la sección es visible, mostrar las imágenes dentro de esa sección
            entry.target.querySelectorAll('.imagen').forEach(img => {
-               img.classList.add('animar'); // Agregar clase para animar la opacidad
+               img.style.visibility = 'visible';
            });
        } else {
            // Si la sección no es visible, ocultar las imágenes dentro de esa sección
            entry.target.querySelectorAll('.imagen').forEach(img => {
-               img.classList.remove('animar'); // Quitar clase para animar la opacidad
+               img.style.visibility = 'hidden';
            });
        }
    });
 }
+
+// Configurar opciones del Intersection Observer
+const opciones = {
+   threshold: 0.5 // Cuando el 50% del elemento es visible
+};
+
+// Crear un nuevo Intersection Observer
+const observer = new IntersectionObserver(handleIntersection, opciones);
+
+// Observar cada sección
+document.querySelectorAll('.fondoimg1, .fondoimg2, .fondoimg3').forEach(seccion => {
+   observer.observe(seccion);
+});
+
 
