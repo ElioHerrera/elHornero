@@ -87,17 +87,18 @@ body {
 	padding-right: 0px;
 
 }
-	A.btTop {
-		text-decoration: none;
-		font-family: 'Pathway Extreme', sans-serif;
-		font-size: 14px;
-		line-height: 18px;
-	}
 
-	A.btTop:Hover {
-		color: #8d1010;
-		text-decoration: none;
-	}
+A.btTop {
+	text-decoration: none;
+	font-family: 'Pathway Extreme', sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+}
+
+A.btTop:Hover {
+	color: #8d1010;
+	text-decoration: none;
+}
 
 
 a {
@@ -127,29 +128,35 @@ a:hover {
 
 /* Estilos para la primera sección */
 .fondoimg1 .contenidoDescripcion h3 {
-    color: red; /* Cambia el color del título de la primera sección a rojo */
+	color: red;
+	/* Cambia el color del título de la primera sección a rojo */
 }
 
 .fondoimg1 .contenidoDescripcion p {
-    color: white; /* Cambia el color del párrafo de la primera sección a azul */
+	color: white;
+	/* Cambia el color del párrafo de la primera sección a azul */
 }
 
 /* Estilos para la segunda sección */
 .fondoimg2 .contenidoDescripcion h3 {
-    color: red; /* Cambia el color del título de la segunda sección a verde */
+	color: red;
+	/* Cambia el color del título de la segunda sección a verde */
 }
 
 .fondoimg2 .contenidoDescripcion p {
-    color: white; /* Cambia el color del párrafo de la segunda sección a naranja */
+	color: white;
+	/* Cambia el color del párrafo de la segunda sección a naranja */
 }
 
 /* Estilos para la tercera sección */
 .fondoimg3 .contenidoDescripcion h3 {
-    color: purple; /* Cambia el color del título de la tercera sección a morado */
+	color: purple;
+	/* Cambia el color del título de la tercera sección a morado */
 }
 
 .fondoimg3 .contenidoDescripcion p {
-    color: brown; /* Cambia el color del párrafo de la tercera sección a marrón */
+	color: brown;
+	/* Cambia el color del párrafo de la tercera sección a marrón */
 }
 
 
@@ -171,52 +178,52 @@ a:hover {
 }
 
 .imgEmpresa {
-    display: flex;
-    flex-direction: column;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	align-items: center;
 }
 
 .contenedorDescripcion {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 20px;
 }
 
 .imagen-container {
-    width: 60%;
-    /* Establece el ancho del contenedor de la imagen al 60% del contenedor de descripción */
+	width: 60%;
+	/* Establece el ancho del contenedor de la imagen al 60% del contenedor de descripción */
 }
 
 .imagen {
-    width: 70%;
-    max-width: 70%;
-    /* Establece el ancho de la imagen al 100% del contenedor de imagen */
+	width: 70%;
+	max-width: 70%;
+	/* Establece el ancho de la imagen al 100% del contenedor de imagen */
 }
 
 .contenidoDescripcion {
-    width: 40%;
-    /* Establece el ancho del texto al 40% del contenedor de descripción */
-    text-align: center;
+	width: 40%;
+	/* Establece el ancho del texto al 40% del contenedor de descripción */
+	text-align: center;
 }
 
 .contenedorDescripcion:nth-child(2) .contenidoDescripcion {
-    order: 1;
+	order: 1;
 }
 
 .contenedorDescripcion:nth-child(2) .imagen-container {
-    order: 2;
+	order: 2;
 }
 
 .contenedorDescripcion:nth-child(3) .contenidoDescripcion {
-    order: 1;
+	order: 1;
 }
 
 .contenedorDescripcion:nth-child(3) .imagen-container {
-    order: 2;
+	order: 2;
 }
 
 /*
@@ -381,11 +388,33 @@ hr {
 	border-top: 1px solid #F6F6F6;
 }
 
+.clientes-grid {
+	padding-top: 20px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+	gap: 20px; /* Espacio entre elementos */
+  }
+  
+  .cliente {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+  }
+  
+  .cliente img {
+	width: 80px;
+	height: 80px;
+	border-radius: 6px; /* Radio de esquina para hacerlo cuadrado con bordes redondeados */
+	object-fit: cover; /* Ajusta el tamaño de la imagen para llenar el cuadro */
+	margin-bottom: 10px;
+}
+
 
 .mapa {
-    width: 100%;
-    height: 50vh;
-	
+	width: 100%;
+	height: 50vh;
+
 }
 
 
@@ -396,11 +425,11 @@ hr {
 @media screen and (max-width: 1100px) {
 
 	body {
-        font-size: 16px;
-        line-height: 24px;
+		font-size: 16px;
+		line-height: 24px;
 		padding-left: 4px;
 		padding-right: 4px;
-    }
+	}
 
 	p {
 		font-size: 12px;
@@ -418,6 +447,7 @@ hr {
 		padding-bottom: 6px;
 		padding-top: 16px;
 	}
+
 	.cuadroLogo_Contacto {
 
 
@@ -462,21 +492,32 @@ hr {
 		padding-bottom: 10px;
 		padding-top: 10px;
 		text-align: right;
-		white-space: nowrap; /* Evitar que los elementos se envuelvan a la siguiente línea */
-		overflow-x: auto; /* Habilita el desplazamiento horizontal */
-    overflow-y: hidden; /* Oculta la barra de desplazamiento vertical */
-    white-space: nowrap; /* Evita el ajuste de línea de los elementos */
-    -webkit-overflow-scrolling: touch; /* Mejora el desplazamiento en dispositivos iOS */
+		white-space: nowrap;
+		/* Evitar que los elementos se envuelvan a la siguiente línea */
+		overflow-x: auto;
+		/* Habilita el desplazamiento horizontal */
+		overflow-y: hidden;
+		/* Oculta la barra de desplazamiento vertical */
+		white-space: nowrap;
+		/* Evita el ajuste de línea de los elementos */
+		-webkit-overflow-scrolling: touch;
+		/* Mejora el desplazamiento en dispositivos iOS */
 	}
+
 	.cuadroBotonera {
-        overflow-x: auto; /* Habilita el desplazamiento horizontal */
-        overflow-y: hidden; /* Oculta la barra de desplazamiento vertical */
-    }
-	
+		overflow-x: auto;
+		/* Habilita el desplazamiento horizontal */
+		overflow-y: hidden;
+		/* Oculta la barra de desplazamiento vertical */
+	}
+
 	.btTop {
-		display: inline-block; /* Permite que los elementos se muestren en línea */
-		margin-right: 10px; /* Espacio entre los elementos */
-		padding: 10px; /* Espacio interno de los elementos */
+		display: inline-block;
+		/* Permite que los elementos se muestren en línea */
+		margin-right: 10px;
+		/* Espacio entre los elementos */
+		padding: 10px;
+		/* Espacio interno de los elementos */
 		/* Agrega otros estilos según sea necesario */
 	}
 
@@ -548,38 +589,40 @@ hr {
 		font-family: 'Pathway Extreme', sans-serif;
 		font-size: 28px;
 		line-height: 38px;
-		
-		
+
+
 	}
 
 	/*         IMAGENES EMPRESA     */
 	.w3-third h2 {
 		font-size: 26px;
-	  }
+	}
 
 	.imagen-container {
 		width: 60%;
 		/* Establece el ancho del contenedor de la imagen al 60% del contenedor de descripción */
 	}
-	
+
 	.contenidoDescripcion h2 {
 		font-size: 20px
 	}
-	
+
 	.contenidoDescripcion {
 		width: 40%;
 		/* Establece el ancho del texto al 40% del contenedor de descripción */
 		text-align: center;
 	}
-	
+
 
 
 	.w3-third img {
-        width: 100%; /* Establece el ancho de la imagen al 100% del contenedor */
-        max-width: 120px; /* Establece el ancho máximo de la imagen en dispositivos móviles */
-        display: block;
-        margin: 0 auto;
-    }
+		width: 100%;
+		/* Establece el ancho de la imagen al 100% del contenedor */
+		max-width: 120px;
+		/* Establece el ancho máximo de la imagen en dispositivos móviles */
+		display: block;
+		margin: 0 auto;
+	}
 
 
 	.contenedorDescripcion {
@@ -588,17 +631,20 @@ hr {
 		/* Centrar verticalmente los elementos */
 		margin-bottom: 20px;
 		/* Espacio entre los bloques */
-		
+
 	}
 
-	
-	
+
+
 	.imagen {
-        width: 50%; /* Establece el ancho de la imagen al 50% del contenedor en dispositivos móviles */
-        height: 24vh; /* Establece la altura de la imagen al 90% del viewport height */
-        object-fit: cover; /* Mantiene la proporción de la imagen y la ajusta para llenar el contenedor */
-    }
-	
+		width: 50%;
+		/* Establece el ancho de la imagen al 50% del contenedor en dispositivos móviles */
+		height: 24vh;
+		/* Establece la altura de la imagen al 90% del viewport height */
+		object-fit: cover;
+		/* Mantiene la proporción de la imagen y la ajusta para llenar el contenedor */
+	}
+
 	.contenidoDescripcion {
 		width: 65%;
 		/* Establece el ancho del texto al 40% del contenedor de descripción */
@@ -650,11 +696,13 @@ hr {
 	}
 
 	.fondoservicios {
-		margin-top: 50px; /* Ajusta el valor según sea necesario */
-	  }
-	  .fondopag{
+		margin-top: 100px;
+		/* Ajusta el valor según sea necesario */
+	}
+
+	.fondopag {
 		padding: 30px;
-	  }
-		
-	  
+	}
+
+
 }
